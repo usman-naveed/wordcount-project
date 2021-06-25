@@ -1,0 +1,11 @@
+<h1>Total words: {{count}}</h1>
+<a href="{% url 'home'%}"> Start Over</a>
+<h3> Your Text: '{{ full_text }}' </h3>
+
+<h3> Count of each word </h3>
+{% for i, j in sorted_dict %}
+<b>{{i}}</b> :
+<b>{{j}}</b>
+<br />
+
+{%endfor%}
